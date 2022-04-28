@@ -185,6 +185,7 @@ class GraphEditDistanceDataset(GraphSimilarityDataset):
         from_idx=np.concatenate(from_idx, axis=0),
         to_idx=np.concatenate(to_idx, axis=0),
         # this task only cares about the structures, the graphs have no features
+        # TODO 
         node_features=np.ones((n_total_nodes, 1), dtype=np.float32),
         edge_features=np.ones((n_total_edges, 1), dtype=np.float32),
         graph_idx=np.concatenate(graph_idx, axis=0),
